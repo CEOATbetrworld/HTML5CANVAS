@@ -1,13 +1,27 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>HTML5 Canvas</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Meme Generator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
-<body id="bd">
-<canvas id = "c"></canvas>
-<script src="js/canvasBuilder.js"></script>
+<body>
+<div>
+    <input type="file" id="file" />
+  </div>
+  <div id="image-container">
+    <canvas width="500" height="500"></canvas>
+    <div>
+      <span>Top Line:</span><br/>
+      <input id="topLineText" type="text"><br/>
+      <span>Bottom Line:</span><br/>
+      <input id="bottomLineText" type="text"><br/>
+      <button id="saveBtn">Save</button>
+    </div>
+  </div>
+<script src ="js/canvasBuilder.js"></script>
 </body>
 </html>
